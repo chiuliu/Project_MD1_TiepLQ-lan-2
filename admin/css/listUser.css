@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  }
+  /* header */
+  .header{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .15);
+}
+
+.header.has-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+}
+.header-content{   
+max-width: 1200px;
+    margin: 0 auto;
+    
+}
+ .header-wrapper {
+    display: flex;
+    align-items: center;
+}
+.header .header-wrapper .main_flex-right{
+
+}
+
+.header .header-wrapper .main_flex-mid .header-nav-main{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-start;
+}
+.header .header-wrapper .main_flex-mid .header-nav-main li{
+    margin: 0 13px;
+}
+
+.header .header-wrapper .main_flex-mid .header-nav-main li a {
+    color: #75706f;
+}
+
+.header .header-wrapper .main_flex-right{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.header .header-wrapper .main_flex-right ul{
+    display: flex;
+    align-items: center;
+}
+.header .header-wrapper .main_flex-right ul li{
+    margin-left: 13px;
+    color: #75706f;
+}
+.header .header-wrapper .main_flex-right ul li a{
+    color: #75706f;
+}
+
+.app_container  {
+    margin-top: 104px;
+}
+  /*  */
+  input,
+  button,
+  textarea,
+  option,
+  select {
+    outline: none;
+    padding: 5px 10px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  #form-scope {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 48px;
+    height: 100vh;
+    background-color: none;
+    background-color: #c7bebeaf;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  .label-product {
+    display: inline-block;
+    min-width: 100px;
+  }
+  
+  .scope-input {
+    margin: 10px 0;
+  }
+  
+  .form-product {
+    width: 400px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    box-shadow: 1px 1px 1px 1px #999;
+    height: fit-content;
+  }
+  
+  .pointer {
+    cursor: pointer;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 56px 0;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid;
+  }
+  
+  .page-item {
+    display: inline-block;
+    margin: 0 4px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+  
+  .page-active {
+    background-color: blue;
+  }
+  
+  .page-item:hover {
+    background-color: aqua;
+  }
+  
+  .nav-bar {
+    display: flex;
+  }
+  
+  .nav-bar div ul li {
+    padding: 20px;
+  }
+  .nav-bar div ul li:hover {
+    background-color: rgb(11, 84, 231);
+  }
+  .nav-bar div ul li:first-child:link{
+    color: rgb(255, 12, 12);
+    border: 1px solid black;
+  }
+  .nav-bar .main-form {
+    padding: 10px;
+  }
+  .hidden{
+      display: none;
+  }
+  
+  /* Phan trang */
+  .active-page {
+    background-color: red;
+    padding: 8px;
+    margin: 8px;
+    
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+.active-page:hover{
+  background-color: aqua;
+}
+.page-list span {
+  
+}

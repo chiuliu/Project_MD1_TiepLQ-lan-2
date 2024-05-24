@@ -1,0 +1,233 @@
+/* header */
+.header{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .15);
+}
+
+.header.has-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+}
+.header-content{   
+max-width: 1200px;
+    margin: 0 auto;
+    
+}
+ .header-wrapper {
+    display: flex;
+    align-items: center;
+}
+.header .header-wrapper .main_flex-right{
+
+}
+
+.header .header-wrapper .main_flex-mid .header-nav-main{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-start;
+}
+.header .header-wrapper .main_flex-mid .header-nav-main li{
+    margin: 0 13px;
+}
+
+.header .header-wrapper .main_flex-mid .header-nav-main li a {
+    color: #75706f;
+}
+
+.header .header-wrapper .main_flex-right{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.header .header-wrapper .main_flex-right ul{
+    display: flex;
+    align-items: center;
+}
+.header .header-wrapper .main_flex-right ul li{
+    margin-left: 13px;
+    color: #75706f;
+}
+.header .header-wrapper .main_flex-right ul li a{
+    color: #75706f;
+}
+
+.app_container  {
+    margin-top: 104px;
+}
+
+/* banner */
+.banner {
+    padding-top: 38%;
+    background-image: url(/UI/src/image/banner-mixi.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+/* item product */
+.collections-best {
+    margin:0 auto;
+    max-width: 1200px;
+    margin-top: 40px;
+}
+
+.best_seller-head {
+    font-size: 30px;
+    font-weight: 700;
+    color: #222222;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.best_seller-link {
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.best_seller-link a{
+    border: 1px solid #007784;
+    color: #007784;
+    padding: 8px 20px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.product-item {
+    border-radius: 3px;
+    position: relative;
+}
+.discount {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #007784;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 16px 10px;
+    border-radius: 50px;
+}
+ .product-imgs-link {
+    padding-top: 130%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+}
+
+.product-item-inner {
+    padding: 10px 10px 20px 10px;
+    text-align: center;
+}
+
+.product-item-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    display: block;
+    color: #4444;
+}
+
+.product-item-name {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    display: block;
+    color: #007784;
+    margin: 6px 0;
+}
+
+.product-item-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.product-item-rating i {
+    color: #d26e4b;
+    font-size: 14px;
+}
+
+.product-item-price {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    display: inline-block;
+    color: #000;
+
+}
+
+.product-item-price span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    display: inline-block;
+    text-decoration: line-through;
+    color: #a3a1a1;
+    margin-right: 6px;
+}
+/* footer */
+.footer-homepage {
+display: flex;
+/* align-items: center; */
+justify-content: center;
+/* padding: 50px; */
+gap: 30px;
+margin:  100px;
+}
+/* .footer-homepage div {
+margin: 0 20px;
+} */
+
+.footer-homepage div ul li {
+    list-style: inside;
+}
+
+.footer-homepage div ul li a {
+    color: #007784;
+    white-space: nowrap;
+}
+.footer-homepage div h3 {
+    margin-bottom: 10px;
+}
+.footer-homepage div span {
+    /* line-height: 1.6;
+    font-size: 15px; */
+}
+
+.social-icon {
+    margin-top: 20px;
+}
+
+.social-icon a i .fa-facebook {
+background-color: #3a589d !important;
+}
+
+.footer-homepage div:first-child {
+    flex: 1.5;
+}
+
+.footer-homepage div:nth-child(2) {
+    flex: 1;
+
+}
+
+.footer-homepage div:nth-child(3) {
+    flex: 1;
+}
+.footer-homepage div:last-child {
+    flex: 2;
+}
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý danh mục</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../UI/src/css/base.css" />
+    <link rel="stylesheet" href="./css/productManagement.css" />
+  </head>
+  <body>
+    <header class="header has-sticky">
+      <div class="header-content">
+        <!-- header-left -->
+        <div class="header-wrapper">
+          <div class="logo header-wrapper flex-left" style="margin-right: 30px">
+            <a href="">
+              <img
+                width="151"
+                height="100"
+                src="https://shop.mixigaming.com/wp-content/uploads/2019/06/logo-mixi-t%C3%A9t.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <!-- header-mid -->
+          <div class="nav main_flex-mid">
+            <ul class="header-nav-main">
+              <li><a href="">Home</a></li>
+              <li><a href="">Danh mục sản phẩm</a></li>
+              <li><a href="">Thông báo</a></li>
+            </ul>
+          </div>
+          <!-- header-right -->
+          <div class="nav main_flex-right">
+            <ul>
+              <li>
+                <a href="./login.html">Logout</a>
+                <i class="fa-solid fa-user"></i>
+              </li>
+              <li class="header-contact-wrapper">
+                <a href="tel:0822221992">
+                  <i class="icon-nav fa-solid fa-phone"></i>
+                  <span>0822221992</span>
+                </a>
+              </li>
+              <li class="card-item">
+                <span class="header-card-title"
+                  >Giỏ hàng
+                  <span class="card-price">0 đ</span>
+                  <i class="icon-nav fa-solid fa-cart-shopping"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="app_container">
+      <section class="nav-bar">
+        <div>
+          <ul>
+            <li><a href="">Quản lý danh mục</a></li>
+            <li><a href="">Quản lý sản phẩm</a></li>
+            <li><a href="">Quản lý User</a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </div>
+        <div class="main-form">
+          <section id="form-scope" class="hidden" onsubmit="submitForm(event)">
+            <form id="form-product" class="form-product">
+              <h4 style="text-align: center">Category</h4>
+              <div class="scope-input">
+                <label for="name" class="label-product">Name: </label>
+                <input id="name" name="name" type="text" />
+                <p style="color: red" id="error-name"></p>
+              </div>
+
+              <div style="display: flex; justify-content: center; gap: 12px">
+                <button type="button" id="btn-cancel">Cancel</button>
+                <button type="submit" id="btn-submit">Submit</button>
+              </div>
+            </form>
+          </section>
+
+          <main style="width: 1200px; margin: 0 auto">
+            <section id="action" style="padding-top: 48px">
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <div>
+                  <button id="btn-add">Add</button>
+                </div>
+                <div>
+                  <input type="text" id="text-search" />
+                  <button id="btn-search">Search</button>
+                </div>
+              </div>
+            </section>
+            <section id="table">
+              <table>
+                <caption
+                  style="font-weight: bold; font-size: 20px; margin: 12px"
+                >
+                  Category Management
+                </caption>
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>CategoryName</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+              </table>
+            </section>
+            <section
+              id="pagination"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 24px;
+              "
+            >
+              <div
+                class=""
+                style="display: flex; justify-content: end; align-items: center"
+              >
+                <button onclick="changePage(-1)">Previous</button>
+                <p id="page-list"></p>
+                <button onclick="changePage(1)">Next</button>
+              </div>
+              <div>
+                <select onchange="changeCategory(event)">
+                  <option value="All">Everything</option>
+                  <option value="aToZ">A-Z</option>
+                  <option value="zToA">Z-A</option>
+                  <option value="STTAscending">Ascending Number</option>
+                  <option value="STTDescending">Descending Number</option>
+                </select>
+              </div>
+            </section>
+          </main>
+        </div>
+      </section>
+      <script src="./js/productManagement.js"></script>
+    </div>
+  </body>
+</html>
